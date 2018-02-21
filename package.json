@@ -1,0 +1,19 @@
+{
+  "name": "dis-algorithm-squad",
+  "version": "1.0.0",
+  "description": "a repo for the learners in my squad to post algorithm answers and discussion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaVashti/dis-algorithm-squad.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianaVashti/dis-algorithm-squad/issues"
+  },
+  "homepage": "https://github.com/DianaVashti/dis-algorithm-squad#readme"
+}
