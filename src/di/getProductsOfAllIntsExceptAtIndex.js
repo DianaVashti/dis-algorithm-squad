@@ -1,5 +1,16 @@
-// Tuesday Algo - Di's Solution
+// Write a function called getProductsOfAllIntsExceptAtIndex that takes an Array
+// of Whole (can be positive or negative) Integers and returns an Array where
+// each index is the product of all of the other integers except the one
+// originally at that index
 
+// Example:
+// Input:   [1, 7, 3, 4]
+// Output: [84, 12, 28, 21]
+
+// by calculating: [7 * 3 * 4,  1 * 3 * 4,  1 * 7 * 4,  1 * 7 * 3]
+
+// do NOT use division in your solution. (can't divide by 0)
+// -----------------------------------------------------------------------------
 
 const getProductsOfAllIntsExceptAtIndex = (arrayOfNums) => {
   // create variable to store each Product Of All Ints Except At Index.

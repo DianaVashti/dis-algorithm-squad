@@ -2,6 +2,7 @@
 // The input arrayOfInts will always have at least three integers
 
 // name your function topThreeProduct
+// -----------------------------------------------------------------------------
 
 const topThreeProduct = (arrayOfInts) => {
   // sort array of ints
