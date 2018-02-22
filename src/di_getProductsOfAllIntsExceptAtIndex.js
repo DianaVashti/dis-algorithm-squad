@@ -1,12 +1,11 @@
 // Tuesday Algo - Di's Solution
 
-const sampleInput = [1, 7, 3, 4];
 
 const getProductsOfAllIntsExceptAtIndex = (arrayOfNums) => {
   let result = [];
 
   function remove(array, element) {
-      return array.filter(e => e !== element);
+    return array.filter(e => e !== element);
   }
 
   for(i=0; i<arrayOfNums.length; i++){
@@ -22,4 +21,5 @@ const getProductsOfAllIntsExceptAtIndex = (arrayOfNums) => {
   return result;
 };
 
+const sampleInput = [1, 7, 3, 4];
 console.log(getProductsOfAllIntsExceptAtIndex(sampleInput));
