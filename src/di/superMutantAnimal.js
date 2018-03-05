@@ -11,7 +11,6 @@
 // one line! Woo!
 const reduceToMutantAnimal = (array) => array.reduce((a, b) => a.concat("-" + b));
 
-
 const animals = ["cat","dog","fish"];
 const longAssListOfAnimals = ["Elephant", "Antelope", "Zebra", "Platypus", "Goldfish", "Aligator", "Whale", "Shark", "Woodchuck", "Hummingbird", "Gazelle", "Anteater", "Dog", "Cat", "Polecat", "Ermine", "Turtle", "Octopus"]
 
