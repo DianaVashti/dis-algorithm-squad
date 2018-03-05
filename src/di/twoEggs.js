@@ -7,11 +7,11 @@
 //
 // Given two eggs, find the highest floor an egg can be dropped from without
 // breaking, with as few drops as possible.
-
+//
 // example:
 // input: integer of maxFloor
 // output: integer of how many drops it took to discover the maxFloor
-
+//
 // -----------------------------------------------------------------------------
 
 const twoEggs = (maxFloor) => {

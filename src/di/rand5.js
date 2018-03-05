@@ -1,12 +1,12 @@
 // Create a function called rand5() that simulates a 5 sided dice that uses the
 // following function called rand7() to achieve it.
-
+//
 // Your rand5() CANNOT use Math.random() and MUST utilize rand7()
-
+//
 const rand7 = () => {
   return Math.floor(Math.random() * (8 - 1)) + 1;
 }
-
+//
 // -----------------------------------------------------------------------------
 
 // since we have a function that gives us a random number 1-7 we create a 7x7
