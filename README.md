@@ -1,5 +1,8 @@
 # dis-algorithm-squad
-a repo for the learners in my squad to post algorithm answers and discussion
+A repo for the learners to post algorithm answers and discussion
+
+
+Find the algorithms pinned in the slack channel "Dis-algorithm-club".
 
 
 ## Guide
