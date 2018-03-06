@@ -9,7 +9,7 @@ Find the algorithms pinned in the slack channel "Dis-algorithm-club".
 1. Fork/clone this repo
 
 
-2. $ `git remote add upstream https://github.com/DianaVashti/dis-algorithm-squad` to add upstream tracking.
+2. $ `git remote add upstream https://github.com/DianaVashti/dis-algorithm-squad.git` to add upstream tracking.
 
 
 3. create a folder named after you inside the `src` folder.
