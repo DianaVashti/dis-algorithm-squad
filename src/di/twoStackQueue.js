@@ -7,7 +7,7 @@
 // for the time cost of x calls on your queue.
 //
 // Your queue cannot be a class (it should hold no values, only the two stacks
-// should hold your data). 
+// should hold your data).
 // -----------------------------------------------------------------------------
 
 class Stack {
@@ -58,3 +58,39 @@ Queue.enqueue(3)
 Queue.enqueue(4)
 Queue.enqueue(5)
 console.log(Queue.dequeue());
+console.log(Queue.dequeue());
+console.log(Queue.dequeue());
+console.log(Queue.dequeue());
+console.log(Queue.dequeue());
+// -----------------------------------------------------------------------------
+
+const inStack = new Stack()
+const outStack = new Stack()
+const betterQueue = {
+  enqueue: function(data){
+    return inStack.pushIt(data)
+  },
+  dequeue: function(){
+    // if outStack is !empty just popIt
+    if(outStack.stack.length !== 0){
+      return outStack.popIt()
+    } else {
+      // re-stack inStack to outStack
+      while(inStack.stack.length !== 0){
+        outStack.pushIt(inStack.popIt())
+      }
+      return outStack.popIt()
+    }
+  }
+}
+
+betterQueue.enqueue(1)
+betterQueue.enqueue(2)
+betterQueue.enqueue(3)
+betterQueue.enqueue(4)
+betterQueue.enqueue(5)
+console.log(betterQueue.dequeue());
+console.log(betterQueue.dequeue());
+console.log(betterQueue.dequeue());
+console.log(betterQueue.dequeue());
+console.log(betterQueue.dequeue());
