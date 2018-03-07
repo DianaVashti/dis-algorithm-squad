@@ -1,7 +1,9 @@
 // We have an array of n + 1 numbers. Every number in the range 1..n appears once
 // except for one number that appears twice.
 //
-// Write a function for finding the number that appears twice.
+// Write a function for finding the number that appears twice. We can do this
+// in O(n) time and O(1) space! Don't forget the range described above is a
+// triangular series 😉
 //
 // call your function whichTwiceRange()
 //
