@@ -35,6 +35,7 @@ const mergeSortedArrays = (firstArray, secondArray) => {
   }
 };
 
+
 console.log( mergeSortedArrays( [1,4,5,8,9],[2,4,7,11,13] ) ); // [1,2,4,4,5,7,8,9,11,13]
 console.log( mergeSortedArrays( [1,4,5],[7,11,13] ) ); // [1,4,5,7,11,13]
 console.log( mergeSortedArrays( [8,9,10],[1,2,3,5,6] ) ); // [1,2,3,5,6,8,9,10]
