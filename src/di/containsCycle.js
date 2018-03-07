@@ -51,3 +51,31 @@ const containsCycle = (firstNode) => {
 
 console.log("Should return true: ", containsCycle(a));
 console.log("Should return false: ", containsCycle(one));
+// -----------------------------------------------------------------------------
+
+// Solution from Interview Cake which is the same runtime but O(1) space
+// instead of O(n) space as is in my solution above
+
+const anotherContainsCycle = (firstNode) => {
+
+    // start both runners at the beginning
+    var slowRunner = firstNode;
+    var fastRunner = firstNode;
+
+    // until we hit the end of the list
+    while (fastRunner && fastRunner.next) {
+        slowRunner = slowRunner.next;
+        fastRunner = fastRunner.next.next;
+
+        // case: fastRunner is about to "lap" slowRunner
+        if (fastRunner === slowRunner) {
+            return true;
+        }
+    }
+
+    // case: fastRunner hit the end of the list
+    return false;
+}
+
+console.log("Should return true: ", anotherContainsCycle(a));
+console.log("Should return false: ", anotherContainsCycle(one));
