@@ -46,3 +46,6 @@ whichTwiceRange(arr1);
 whichTwiceRange(arr2);
 whichTwiceRange(arr3);
 whichTwiceRange(arr4);
+
+// The time complexity of this function is O(n); worst case scenario, the function
+// will have to traverse the entire array to find the repeated number
