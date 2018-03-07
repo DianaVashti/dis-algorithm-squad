@@ -1,4 +1,4 @@
-// Largest In Stack - ()
+// Largest In Stack - (easy)
 
 // Use the defined Stack below and add a new method called largestInStack()
 // that returns the largest item in the stack. This method should not remove
