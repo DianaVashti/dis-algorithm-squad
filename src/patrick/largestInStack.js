@@ -81,3 +81,6 @@ maxStack.push(5);
 
 console.log(maxStack.largestInStack()); // Should return 420 🔥🔥🔥🔥🔥
 maxStack.largestInStack();
+
+// The time complexity of this algorithm is O(n), because worst case scenario the
+// function would have to traverse the entire stack to find the largest item
