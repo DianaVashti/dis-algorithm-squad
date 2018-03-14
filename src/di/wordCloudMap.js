@@ -66,4 +66,5 @@ const wordCloudMap = (inputString) => {
 
 };
 
-console.log(wordCloudMap("I am -a. sample!!! input :string, do you love me?? string"))
+console.log(wordCloudMap("Im like hey whats up hello seen yr pretty ass soon as you walked in the door I just wanna chill got a sack for us to roll. Married to the money Introduced her to my stove. Showed her how to whip it, now shes remixing for low. She my trap queen, let her hit the bando. We be countin up, watch how far them bands go. We just set a goal, talkin matchin Lambos. At fifty-six a gram five a hundred grams though. Man, I swear I love her how she work the damn pole. Hit the strip club, we be letting bands go. Everybody hating, we just call em friends though. In love with the money I aint never letting go."));
+// console.log(wordCloudMap("stuff works?"))

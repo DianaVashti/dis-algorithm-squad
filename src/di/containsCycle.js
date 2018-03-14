@@ -55,6 +55,7 @@ console.log("Should return false: ", containsCycle(one));
 
 // Solution from Interview Cake which is the same runtime but O(1) space
 // instead of O(n) space as is in my solution above
+// also this solution does not depend on the values being unique
 
 const anotherContainsCycle = (firstNode) => {
 
