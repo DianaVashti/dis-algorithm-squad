@@ -29,23 +29,26 @@ const firstStack = new Stack()
 const secondStack = new Stack()
 // -----------------------------------------------------------------------------
 
-function enqueue(item) {
+function enqueue (item) {
+  if (secondStack.stack.length > 0) {
+    let current = secondStack.popIt()
+    while (current) {
+      firstStack.pushIt(current)
+      current = secondStack.popIt()
+    }
+  }
   firstStack.pushIt(item)
 }
 
-function dequeue() {
-  let current = firstStack.popIt()
-  while (current) {
-    secondStack.pushIt(current)
-    current = firstStack.popIt()
+function dequeue () {
+  if (secondStack.stack.length === 0) {
+    let current = firstStack.popIt()
+    while (current) {
+      secondStack.pushIt(current)
+      current = firstStack.popIt()
+    }
   }
-  let result = secondStack.popIt()
-  let backToFirst = secondStack.popIt()
-  while (backToFirst) {
-    firstStack.pushIt(backToFirst)
-    backToFirst = secondStack.popIt()
-  }
-  return result
+  return secondStack.popIt()
 }
 
 enqueue(1)
